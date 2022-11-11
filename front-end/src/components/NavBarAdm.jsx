@@ -22,12 +22,15 @@ function NavBarAdm() {
           <Link
             to="/admin/manage"
             data-testid={ datatestids[12] }
-            className={ `
-              mr-8 bg-[#F81127] border w-[300px]
-              items-center rounded-full py-2 flex justify-center text-white text-[20px]` }
+            className={ `flex text-white bg-gradient-to-r from-red-600
+                       via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 
+                       focus:outline-none focus:ring-red-300
+                       dark:focus:ring-red-800 shadow-sm shadow-red-500/50
+                       dark:shadow-sm dark:shadow-red-800/80 font-medium rounded-lg
+                       text-sm px-5 py-2.5 text-center mr-2 mb-2` }
           >
             <img className="mr-4" src={ iconBike } alt="iconBike" />
-            GERENCIAR USUÁRIOS
+            Gerenciar Usuários
           </Link>
         </div>
 
@@ -40,7 +43,9 @@ function NavBarAdm() {
             className="flex"
             data-testid={ datatestids[14] }
             to="/login"
-            onClick={ () => { localStorage.removeItem('user'); } }
+            onClick={ () => {
+              localStorage.removeItem('user');
+            } }
           >
             <img className="mr-1" src={ iconExit } alt="iconExit" />
             Sair
