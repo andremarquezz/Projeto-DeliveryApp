@@ -80,20 +80,18 @@ export default function Product(props) {
         alt={ name }
         width="240px"
       />
-      <div className="w-[20em] bg-black flex flex-col items-center">
+      <div className="w-[20em] bg-[#3b0000] flex flex-col items-center">
         <p
           className="text-white text-xl"
           data-testid={ `${dataTestIds[15]}${id}` }
         >
           {name}
-
         </p>
         <p
           className="text-white font-bold text-xl"
           data-testid={ `${dataTestIds[16]}${id}` }
         >
           {`R$ ${price.replace('.', ',')}`}
-
         </p>
         <span className="rounded-md">
           <button
