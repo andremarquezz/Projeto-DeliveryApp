@@ -31,7 +31,10 @@ export default function Products() {
     <div className="container mx-auto w-full min-h-screen min-">
       <NavBar />
       <BannerProducts />
-      <div className="flex flex-wrap justify-evenly items-center">
+      <div
+        className="flex flex-wrap py-5 justify-evenly
+        max-w-[1300px] mx-auto items-center"
+      >
         {products.map((product) => (
           <Product
             key={ product.id }

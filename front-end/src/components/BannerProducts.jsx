@@ -4,7 +4,7 @@ import imgBanner from '../imgs/bannerProduct.png';
 function BannerProducts() {
   return (
     <div
-      className="max-w-7xl relative mx-auto
+      className="max-w-[1300px] relative mx-auto
     h-[330px] rounded-xl overflow-hidden"
     >
       <div className="w-full h-full bg-[#060606] opacity-85">
