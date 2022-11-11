@@ -8,3 +8,20 @@
 
 @import 'tailwindcss/utilities';
 
+
+@keyframes zoom {
+
+  0% {
+    transform: scale(120%);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+
+}
+
+.animation {
+  animation: zoom forwards;
+  animation-duration: 20s;
+}

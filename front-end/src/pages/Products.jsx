@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import BannerProducts from '../components/BannerProducts';
 import NavBar from '../components/Navbar';
 import Product from '../components/Product';
 import { getProducts } from '../services/product';
@@ -28,6 +29,7 @@ export default function Products() {
   return (
     <div className="container mx-auto w-full min-h-screen min-">
       <NavBar />
+      <BannerProducts />
       {products.map((product) => (
         <Product
           key={ product.id }
