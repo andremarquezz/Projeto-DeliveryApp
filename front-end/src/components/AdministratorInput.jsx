@@ -15,7 +15,6 @@ export default function RegisterForm() {
     const MIN_LENGTH_NAME = 12;
     const isNameValid = userName.length >= MIN_LENGTH_NAME;
     const emailRegex = /^[a-z0-9._]+@[a-z0-9]+\.[a-z]+(\.[a-z]+)?$/i;
-    // https://pt.stackoverflow.com/questions/1386/express%C3%A3o-regular-para-valida%C3%A7%C3%A3o-de-e-mail
     const isEmailValid = emailRegex.test(userEmail);
     const isPasswordValid = userPassword.length >= MIN_LENGTH_PASSWORD;
     return !(isEmailValid && isPasswordValid && isNameValid);
