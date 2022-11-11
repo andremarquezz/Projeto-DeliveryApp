@@ -35,9 +35,10 @@ export default function Checkout() {
   return (
     <div>
       <NavBar />
-      <h1>Checkout</h1>
-      <p>Finalizar Pedido</p>
-      <CarShop />
+      <h1 className="font-bold text-2xl">Finalizar pedidos</h1>
+      <div className="mt-10">
+        <CarShop />
+      </div>
       <CheckoutDetails props={ { infos, setInfos } } />
 
       <button type="button" data-testid={ datatestids[32] } onClick={ finalizedBuy }>

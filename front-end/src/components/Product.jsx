@@ -32,7 +32,7 @@ export default function Product(props) {
     );
 
     if (!productSaved) {
-      const productCartData = { name, price, quantity: currentQuantity };
+      const productCartData = { name, price, quantity: currentQuantity, img: urlImage };
       dispatch(actionAddProduct(productCartData));
     } else {
       const productUpdated = modifyProductSaved(currentQuantity, productSaved);
