@@ -1,13 +1,12 @@
 import { useEffect, useState } from 'react';
 import moment from 'moment';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import NavBar from '../components/Navbar';
 import { getAllOrders } from '../services/customerOrders';
 import dataTestIds from '../utils/dataTestIds';
 
 export default function OrderCustomer() {
   const [orders, setOrders] = useState([]);
-  const navigate = useNavigate();
 
   useEffect(() => {
     const getOrders = async () => {
@@ -55,7 +54,6 @@ export default function OrderCustomer() {
 
                     <Link
                       to={ `/customer/orders/${id}` }
-                      onClick={ () => navigate(`/customer/orders/${id}`) }
                       className="no-underline"
                     >
                       <button
