@@ -1,19 +1,12 @@
 import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import datatestids from '../utils/dataTestIds';
-import iconDrink from '../imgs/iconDrink.svg';
 import iconBike from '../imgs/iconBike.svg';
 import iconExit from '../imgs/iconExit.svg';
 import iconUser from '../imgs/iconUser.svg';
 
 function NavBarAdm() {
-  const navigate = useNavigate();
   const user = JSON.parse(localStorage.getItem('user'));
-
-  const logout = () => {
-    localStorage.removeItem('user');
-    navigate('/login');
-  };
 
   return (
     <div className="flex px-10 py-4">
@@ -47,7 +40,7 @@ function NavBarAdm() {
             className="flex"
             data-testid={ datatestids[14] }
             to="/login"
-            onClick={ () => localStorage.removeItem('user') }
+            onClick={ () => { localStorage.removeItem('user'); } }
           >
             <img className="mr-1" src={ iconExit } alt="iconExit" />
             Sair
