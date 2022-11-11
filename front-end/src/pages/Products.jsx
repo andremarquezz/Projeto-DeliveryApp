@@ -28,7 +28,7 @@ export default function Products() {
   };
 
   return (
-    <div className="container mx-auto w-full min-h-screen min-">
+    <div className="container mx-auto w-full min-h-screen">
       <NavBar />
       <BannerProducts />
       <div
