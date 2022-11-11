@@ -58,7 +58,7 @@ export default function Register() {
         className="text-center md:text-5xl text-3xl
       text-[#404140] font-bold tracking-wider"
       >
-        Cadastro
+        Criar conta
       </h1>
       <form
         className="mx-auto flex flex-col md:w-1/2
@@ -112,13 +112,13 @@ export default function Register() {
           <button
             className="bg-[#f81127] rounded
 text-white drop-shadow-md w-full px-10 py-2
-hover:opacity-80 mb-1 md:text-[21px] text-md cursor-pointer"
+hover:opacity-80 mb-1 md:text-[21px] text-md cursor-pointer disabled:opacity-20"
             type="button"
             disabled={ disabledBtnLogin }
             data-testid={ dataTestIds[9] }
             onClick={ newAccount }
           >
-            Cadastrar
+            Criar conta
           </button>
           <Link to="/login">
             <button
