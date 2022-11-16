@@ -55,6 +55,7 @@
     }
   },
   "dependencies": {
-    "fn": "^0.2.0"
+    "fn": "^0.2.0",
+    "swagger-ui-express": "^4.6.0"
   }
 }

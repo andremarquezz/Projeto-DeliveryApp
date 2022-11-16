@@ -11,13 +11,13 @@ export default function CarShop() {
     dispatch(actionRemoveItem(index));
   };
 
-  const totalPrice = () => {
-    let total = 0;
-    products.forEach((product) => {
-      total += product.price * product.quantity;
-    });
-    return total.toFixed(2).replace('.', ',');
-  };
+  // const totalPrice = () => {
+  //   let total = 0;
+  //   products.forEach((product) => {
+  //     total += product.price * product.quantity;
+  //   });
+  //   return total.toFixed(2).replace('.', ',');
+  // };
 
   return (
     <div>
@@ -114,9 +114,9 @@ export default function CarShop() {
         </span>
       ))}
 
-      <h2 data-testid={ dataTestIds[28] }>
+      {/* <h2 data-testid={ dataTestIds[28] }>
         {`Total: R$ ${totalPrice()}`}
-      </h2>
+      </h2> */}
     </div>
   );
 }
